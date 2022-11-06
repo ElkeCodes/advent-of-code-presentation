@@ -1,48 +1,197 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2
-						<aside class="notes">
-						<p>Some notes</p>
-						</aside>
-						<p>Some slide text</p>
-						<aside class="notes">
-						<p>and some more notes</p>
-					</aside>
-				</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <style>
+      blockquote {
+        font-size: 0.5em;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Advent of Code: level up your programming skills</h1>
+        </section>
+        <section>
+          <h2>Hi, I'm Elke!</h2>
+          <ul>
+            <li>Fullstack JS consultant</li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+        <section>
+          <section><h2>What is the Advent of Code?</h2></section>
+          <section>
+            <h3>What is an advent calendar?</h3>
+            <ul>
+              <li>Christian tradition</li>
+              <li>Couting down the days to Christmas</li>
+              <li>4 Sundays before Christmas</li>
+              <li>Between 27 November and 3 December</li>
+              <li>People turned on easy mode</li>
+              <li>Commercialised</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Food advent calendars</h3>
+            <img src="img/advent-calendar-chocolate.jpg" alt="" />
+          </section>
+          <section>
+            <h3>Toy advent calendars</h3>
+            <img src="img/advent-calendar-lego.webp" alt="" />
+          </section>
+          <section>
+            <h3>The Advent of Code</h3>
+            <ul>
+              <li>Story over 25 days</li>
+              <li>25 puzzles</li>
+              <li>Each day = 2 parts</li>
+              <li>Each part = 1 star</li>
+              <li>Goal: 50 stars</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Puzzle examples</h2>
+          </section>
+          <section>
+            <h3>Day 1</h3>
+            <blockquote>
+              After saving Christmas five years in a row, you've decided to take
+              a vacation at a nice resort on a tropical island. Surely,
+              Christmas will go on without you.<br /><br />The tropical island
+              has its own currency and is entirely cash-only. The gold coins
+              used there have a little picture of a starfish; the locals just
+              call them stars. None of the currency exchanges seem to have heard
+              of them, but somehow, you'll need to find fifty of these coins by
+              the time you arrive so you can pay the deposit on your room. To
+              save your vacation, you need to get all fifty stars by December
+              25th.<br /><br />
+              Collect stars by solving puzzles. Two puzzles will be made
+              available on each day in the Advent calendar; the second puzzle is
+              unlocked when you complete the first. Each puzzle grants one star.
+              Good luck!<br /><br />
+              Before you leave, the Elves in accounting just need you to fix
+              your <em>expense report</em> (your puzzle input); apparently,
+              something isn't quite adding up.<br /><br />
+              Specifically, they need you to find the two entries that sum to
+              2020 and then multiply those two numbers together. For example,
+              suppose your expense report contained the following:<br /><br />1721<br />979
+              <br />366<br />299<br />675<br />1456<br /><br />
+              In this list, the two entries that sum to 2020 are 1721 and 299.
+              Multiplying them together produces 1721 * 299 = 514579, so the
+              correct answer is 514579.<br /><br />Of course, your expense
+              report is much larger. Find the two entries that sum to 2020; what
+              do you get if you multiply them together?
+            </blockquote>
+          </section>
+          <section>
+            <h3>Day 1 input</h3>
+            <blockquote>
+              1632 1438 1811 1943 1883 1698 1976 1972 1794 1726 1850 1789 1524
+              1701 1454 1594 1655 1018 1828 1867 1959 1541 1596 1998 1916 1894
+              1727 1812 1800 1897 1534 1712 1825 1629 1827 81 1855 1621 1694
+              1663 1793 1685 1616 1899 1688 1652 1719 1589 1649 1742 1905 922
+              1695 1747 1989 1968 1678 1709 1938 1920 1429 1556 2005 1728 1484
+              1746 1702 1456 1917 1670 1433 1538 1806 1667 1505 963 1478 2003
+              1955 1689 1490 1523 1615 1784 1624 583 1465 1443 1489 1873 1485
+              1773 1704 352 505 1705 1844 1599 1778 1846 1533 1535 1965 1987 828
+              1755 1823 1639 1981 1763 1758 1819 1569 1580 358 1786 1964 1604
+              1805 1822 1941 1993 1939 1975 1966 1852 1310 1687 1718 641 1715
+              1995 1603 1444 1641 1961 1536 1771 1267 1749 1944 1519 1445 1818
+              1558 1922 1452 1901 1915 1957 1840 1785 1946 1683 1918 1847 1690
+              1716 1627 1571 1985 1455 435 1856 1527 1660 1555 1557 1591 1906
+              1646 1656 1620 1618 1598 1606 1808 1509 1551 1723 1835 1610 1820
+              1942 1767 1549 1607 1781 1612 1864 2007 1908 1650 1449 1886 1878
+              1895 1869 1469 1507
+            </blockquote>
+          </section>
+          <section>
+            <h3>Day 1 solution</h3>
+            <code>
+              <pre>
+function runPartA() {
+	const fileData = readFile("01", "a");
+	const data = fileData.map((value) => Number.parseInt(value));
+  
+	for (let i = 0; i < data.length; i++) {
+	  for (let j = 0; j < data.length; j++) {
+		if (data[i] + data[j] === 2020) {
+		  return data[i] * data[j];
+		}
+	  }
+	}
+  }
+}</pre
+              >
+            </code>
+          </section>
+          <section>- example day 10 puzzle</section>
+        </section>
+        <section>- the end</section>
+        <section>My experience with AoC</section>
+        <section>- situation 4/11</section>
+        <section>- first time entering (Scheme)</section>
+        <section>* why, how, my experience, the end result</section>
+        <section>- second time entering (JS/TS)</section>
+        <section>* why, how, my experience, the end result</section>
+        <section>- third time entering (Rust)</section>
+        <section>* why, how, my experience, the end result</section>
+        <section>How can you start</section>
+        <section>- the account</section>
+        <section>- choosing a technology</section>
+        <section>- use a starter template</section>
+        <section>- when should you enter?</section>
+        <section>- getting help (reddit, discord, github, ...)</section>
+        <section>- situation 30/11</section>
+        <section>2022 version</section>
+        <section>- how I'm participating</section>
+        <section>- my first day</section>
+        <section>- need help? Discord!</section>
+        <section>Motivational part</section>
+        <section>- don't put time pressure on you</section>
+        <section>- want to change tech? DO IT!</section>
+        <section>
+          - not everyone can do everything (show stats of days:
+          https://adventofcode.com/2021/stats)
+        </section>
+        <section>End slide</section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
