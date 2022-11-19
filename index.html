@@ -20,34 +20,54 @@
         font-size: 0.5em;
         text-align: left;
       }
+      p em {
+        text-decoration: underline;
+      }
+      ul.no-style li {
+        list-style: none;
+      }
+      div.puzzle-description {
+        background: #222222;
+        text-align: left;
+        font-size: 1rem;
+        padding: 1rem;
+      }
+      div.puzzle-description p {
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+      }
+      div.puzzle-description p:first-child {
+        margin-top: 0rem;
+      }
     </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
         <section>
-          <h1>Advent of Code: level up your programming skills</h1>
+          <h1>🎄<br />Advent of Code<br />🎄</h1>
+          <h2>Level up your programming skills</h2>
         </section>
         <section>
           <h2>Hi, I'm Elke!</h2>
-          <ul>
-            <li>Fullstack JS consultant</li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="no-style">
+            <li class="fragment">👩‍💻 Fullstack JS consultant</li>
+            <li class="fragment">🏃‍♀️ Half-marathons</li>
+            <li class="fragment">📸 Photography</li>
+            <li class="fragment">🤘 Rock and metal shows/festivals</li>
           </ul>
         </section>
         <section>
           <section><h2>What is the Advent of Code?</h2></section>
           <section>
             <h3>What is an advent calendar?</h3>
-            <ul>
-              <li>Christian tradition</li>
-              <li>Couting down the days to Christmas</li>
-              <li>4 Sundays before Christmas</li>
-              <li>Between 27 November and 3 December</li>
-              <li>People turned on easy mode</li>
-              <li>Commercialised</li>
+            <ul class="no-style">
+              <li class="fragment">⛪️ Christian tradition</li>
+              <li class="fragment">#️⃣ Counting down the days to Christmas</li>
+              <li class="fragment">4️⃣ 4 Sundays before Christmas</li>
+              <li class="fragment">📆 Between 27 November and 3 December</li>
+              <li class="fragment">😎 People turned on easy mode</li>
+              <li class="fragment">🤑 Commercialised</li>
             </ul>
           </section>
           <section>
@@ -60,12 +80,12 @@
           </section>
           <section>
             <h3>The Advent of Code</h3>
-            <ul>
-              <li>Story over 25 days</li>
-              <li>25 puzzles</li>
-              <li>Each day = 2 parts</li>
-              <li>Each part = 1 star</li>
-              <li>Goal: 50 stars</li>
+            <ul class="no-style">
+              <li class="fragment">✍️ Story set in 25 days before Christmas</li>
+              <li class="fragment">🧩 25 puzzles</li>
+              <li class="fragment">⏰ Each day = 2 parts</li>
+              <li class="fragment">⭐️ Each part = 1 star</li>
+              <li class="fragment">🤩 Goal: 50 stars</li>
             </ul>
           </section>
         </section>
@@ -75,34 +95,111 @@
           </section>
           <section>
             <h3>Day 1</h3>
-            <blockquote>
-              After saving Christmas five years in a row, you've decided to take
-              a vacation at a nice resort on a tropical island. Surely,
-              Christmas will go on without you.<br /><br />The tropical island
-              has its own currency and is entirely cash-only. The gold coins
-              used there have a little picture of a starfish; the locals just
-              call them stars. None of the currency exchanges seem to have heard
-              of them, but somehow, you'll need to find fifty of these coins by
-              the time you arrive so you can pay the deposit on your room. To
-              save your vacation, you need to get all fifty stars by December
-              25th.<br /><br />
-              Collect stars by solving puzzles. Two puzzles will be made
-              available on each day in the Advent calendar; the second puzzle is
-              unlocked when you complete the first. Each puzzle grants one star.
-              Good luck!<br /><br />
-              Before you leave, the Elves in accounting just need you to fix
-              your <em>expense report</em> (your puzzle input); apparently,
-              something isn't quite adding up.<br /><br />
-              Specifically, they need you to find the two entries that sum to
-              2020 and then multiply those two numbers together. For example,
-              suppose your expense report contained the following:<br /><br />1721<br />979
-              <br />366<br />299<br />675<br />1456<br /><br />
-              In this list, the two entries that sum to 2020 are 1721 and 299.
-              Multiplying them together produces 1721 * 299 = 514579, so the
-              correct answer is 514579.<br /><br />Of course, your expense
-              report is much larger. Find the two entries that sum to 2020; what
-              do you get if you multiply them together?
-            </blockquote>
+            <div class="puzzle-description">
+              <p class="fragment">
+                After saving Christmas five years in a row, you've decided to
+                take a vacation at a nice resort on a tropical island. Surely,
+                Christmas will go on without you.
+              </p>
+              <p class="fragment">
+                The tropical island has its own currency and is entirely
+                cash-only. The gold coins used there have a little picture of a
+                starfish; the locals just call them stars. None of the currency
+                exchanges seem to have heard of them, but somehow, you'll need
+                to find fifty of these coins by the time you arrive so you can
+                pay the deposit on your room. To save your vacation, you need to
+                get all fifty stars by December 25th.
+              </p>
+              <p class="fragment">
+                Collect stars by solving puzzles. Two puzzles will be made
+                available on each day in the Advent calendar; the second puzzle
+                is unlocked when you complete the first. Each puzzle grants one
+                star. Good luck!
+              </p>
+              <p class="fragment">
+                Before you leave, the Elves in accounting just need you to fix
+                your <em>expense report</em> (your puzzle input); apparently,
+                something isn't quite adding up.
+              </p>
+              <p class="fragment">
+                Specifically, they need you to
+                <em>find the two entries that sum to 2020</em> and then multiply
+                those two numbers together. For example, suppose your expense
+                report contained the following:
+              </p>
+              <p class="fragment">
+                1721<br />979 <br />366<br />299<br />675<br />1456
+              </p>
+              <p class="fragment">
+                In this list, the two entries that sum to 2020 are 1721 and 299.
+                Multiplying them together produces 1721 * 299 = 514579, so the
+                correct answer is 514579.
+              </p>
+              <p class="fragment">
+                Of course, your expense report is much larger.
+                <em
+                  >Find the two entries that sum to 2020; what do you get if you
+                  multiply them together?</em
+                >
+              </p>
+            </div>
+          </section>
+          <section>
+            <h3>How do you start?</h3>
+            <ul class="no-style">
+              <li class="fragment">🤓 Read the text thoroughly</li>
+              <li class="fragment">🧠 Understand everything</li>
+              <li class="fragment">🕵️‍♀️ What is the problem we try to solve?</li>
+              <li class="fragment">⬇️ What is the input?</li>
+              <li class="fragment">⬆️ What is the output?</li>
+              <li class="fragment">🥸 Write some pseudocode</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Finding the algorithm</h3>
+            <ul class="no-style">
+              <li class="fragment">
+                🤨 The problem = find 2 entries that sum to 2020
+              </li>
+              <li class="fragment">⬇️ The input = list of numbers</li>
+              <li class="fragment">⬆️ The output = multiply the two entries</li>
+            </ul>
+          </section>
+          <section>
+            <h3>The algorithm</h3>
+            <ul class="no-style">
+              <li class="fragment">🔄 Loop over entries</li>
+              <li class="fragment" style="padding-left: 2ch">
+                🔄 Loop over other entries
+              </li>
+              <li class="fragment" style="padding-left: 4ch">
+                🤨 Entry 1 + entry 2 = 2020
+              </li>
+              <li class="fragment" style="padding-left: 6ch">
+                🎉 Result = entry 1 * entry 2
+              </li>
+              <li class="fragment" style="padding-left: 6ch">
+                😫 Continue search
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Day 1 solution</h3>
+            <pre>
+				  <code class="language-typescript" data-trim>
+const data = [1721, 979, 366, 299, 675, 1456];
+
+for (let i = 0; i < data.length; i++) {
+  for (let j = 0; j < data.length; j++) {
+    if (data[i] + data[j] === 2020) {
+      console.log(data[i] * data[j]);
+    }
+  }
+}
+            </code>
+			</pre>
+            <p class="fragment">if statement is true for 1721 + 299</p>
+            <p class="fragment">1721 * 299 = 514579</p>
           </section>
           <section>
             <h3>Day 1 input</h3>
@@ -124,44 +221,284 @@
               1942 1767 1549 1607 1781 1612 1864 2007 1908 1650 1449 1886 1878
               1895 1869 1469 1507
             </blockquote>
+            <a href="https://adventofcode.com/2020/day/1/input"
+              >https://adventofcode.com/2020/day/1/input</a
+            >
+            <p class="fragment">🤔 200 input numbers</p>
           </section>
           <section>
             <h3>Day 1 solution</h3>
-            <code>
-              <pre>
+            <pre>
+				  <code class="language-typescript" data-trim>
 function runPartA() {
 	const fileData = readFile("01", "a");
 	const data = fileData.map((value) => Number.parseInt(value));
   
 	for (let i = 0; i < data.length; i++) {
-	  for (let j = 0; j < data.length; j++) {
-		if (data[i] + data[j] === 2020) {
-		  return data[i] * data[j];
+		for (let j = 0; j < data.length; j++) {
+			if (data[i] + data[j] === 2020) {
+				return data[i] * data[j];
+			}
 		}
-	  }
 	}
-  }
-}</pre
-              >
+}
             </code>
+			</pre>
+            <p class="fragment">if statement true for: 81 + 1939 = 2020</p>
+            <p class="fragment">Puzzle solution = 81 * 1939 = 157059</p>
           </section>
-          <section>- example day 10 puzzle</section>
+          <section>
+            <h3>Time for part 2!</h3>
+            <div class="puzzle-description">
+              <p class="fragment">
+                The Elves in accounting are thankful for your help; one of them
+                even offers you a starfish coin they had left over from a past
+                vacation. They offer you a second one if you can find
+                <em>three</em>
+                numbers in your expense report that meet the same criteria.
+              </p>
+              <p class="fragment">
+                Using the above example again, the three entries that sum to
+                2020 are <em>979, 366, and 675</em>. Multiplying them together
+                produces the answer, <em>241861950</em>.
+              </p>
+              <p class="fragment">
+                In your expense report,
+                <em
+                  >what is the product of the three entries that sum to 2020</em
+                >?
+              </p>
+            </div>
+          </section>
+          <section>
+            <h3>Updating the algorithm</h3>
+            <ul class="no-style">
+              <li class="fragment">🔄 Loop over entries</li>
+              <li class="fragment" style="padding-left: 2ch">
+                🔄 Loop second time over entries
+              </li>
+              <li class="fragment" style="padding-left: 4ch">
+                🔄 Loop third time over entries
+              </li>
+              <li class="fragment" style="padding-left: 6ch">
+                🤨 Entry 1 + entry 2 + entry 3 = 2020
+              </li>
+              <li class="fragment" style="padding-left: 8ch">
+                🎉 Result = entry 1 * entry 2 * entry 3
+              </li>
+              <li class="fragment" style="padding-left: 8ch">
+                😫 Continue search
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Part 2 solution</h3>
+            <pre>
+				  <code class="language-typescript" data-trim>
+function runPartB() {
+	const fileData = readFile("01", "a");
+	const data = fileData.map((value) => Number.parseInt(value));
+  
+	for (let i = 0; i < data.length; i++) {
+		for (let j = 0; j < data.length; j++) {
+      for (let k = 0; k < data.length; k++) {
+        if (data[i] + data[j] + data[k] === 2020) {
+          return data[i] * data[j] * data[k];
+        }
+      }
+		}
+	}
+}
+            </code>
+			</pre>
+            <p class="fragment">
+              if statement true for: 352 + 358 + 1310 = 2020
+            </p>
+            <p class="fragment">
+              Puzzle solution = 352 * 358 * 1310 = 165080960
+            </p>
+          </section>
+          <section>
+            <h3>What have we learned?</h3>
+            <ul class="no-style">
+              <li class="fragment">🤔 If statements</li>
+              <li class="fragment">🧛 Basic arithmetic operations</li>
+              <li class="fragment">👯 Arrays</li>
+              <li class="fragment">🔄 Looping over arrays</li>
+              <li class="fragment">👓 Reading a file</li>
+            </ul>
+          </section>
         </section>
-        <section>- the end</section>
-        <section>My experience with AoC</section>
-        <section>- situation 4/11</section>
-        <section>- first time entering (Scheme)</section>
-        <section>* why, how, my experience, the end result</section>
-        <section>- second time entering (JS/TS)</section>
-        <section>* why, how, my experience, the end result</section>
-        <section>- third time entering (Rust)</section>
-        <section>* why, how, my experience, the end result</section>
-        <section>How can you start</section>
-        <section>- the account</section>
-        <section>- choosing a technology</section>
-        <section>- use a starter template</section>
-        <section>- when should you enter?</section>
-        <section>- getting help (reddit, discord, github, ...)</section>
+        <section>
+          <h3>The end result</h3>
+          <img src="img/result-2020.png" alt="" />
+        </section>
+        <section>
+          <section><h2>My experience with the Advent of Code</h2></section>
+          <section>
+            <h3>4th of November 2022</h3>
+            <img src="img/overview-20221104.png" alt="" />
+          </section>
+          <section>
+            <h3>2018: Scheme</h3>
+            <div style="display: flex">
+              <ul class="no-style">
+                <li class="fragment">🥇 First time participating</li>
+                <li class="fragment">🏋️‍♀️ Exercise my old Scheme knowledge</li>
+                <li class="fragment">📆 Same day solve</li>
+                <li class="fragment">
+                  ⏳ Performance and time became an issue
+                </li>
+                <li class="fragment">⏩ Skipped 2 days</li>
+                <li class="fragment">😨 Never completed</li>
+                <li class="fragment">🤩 31 stars</li>
+              </ul>
+              <img
+                class="fragment"
+                src="img/result-2018.png"
+                alt=""
+                style="width: 30vw"
+              />
+            </div>
+            <p class="fragment">
+              <a
+                href="
+              https://github.com/ElkeCodes/AdventOfCode2018"
+              >
+                https://github.com/ElkeCodes/AdventOfCode2018</a
+              >
+            </p>
+          </section>
+          <section>
+            <h3>Retro on 2018</h3>
+            <ul class="no-style">
+              <li class="fragment">🎓 Scheme = nostalgia</li>
+              <li class="fragment">👩‍🏫 Practiced old techniques</li>
+              <li class="fragment">🐌 Not the fastest language</li>
+              <li class="fragment">🥳 Fun and accomplished feeling</li>
+            </ul>
+          </section>
+          <section>
+            <h3>2020: TypeScript</h3>
+            <div style="display: flex">
+              <ul class="no-style">
+                <li class="fragment">🥈 Second time participating</li>
+                <li class="fragment">🏎 Daily driver</li>
+                <li class="fragment">🧘‍♀️ Less harsh on myself</li>
+                <li class="fragment">🤩 50 stars</li>
+              </ul>
+              <img
+                class="fragment"
+                src="img/result-2020.png"
+                alt=""
+                style="width: 30vw"
+              />
+            </div>
+            <p class="fragment">
+              <a
+                href="
+              https://github.com/ElkeCodes/AdventOfCode2020"
+              >
+                https://github.com/ElkeCodes/AdventOfCode2020</a
+              >
+            </p>
+          </section>
+          <section>
+            <h3>Retro on 2020</h3>
+            <ul class="no-style">
+              <li class="fragment">💪 JavaScript/TypeScript = confidence</li>
+              <li class="fragment">📚 So much documentation</li>
+              <li class="fragment">🙇‍♀️ Learned new things about the language</li>
+              <li class="fragment">🥳 Easier than 2018 and more fun</li>
+            </ul>
+          </section>
+          <section>
+            <h3>2021: Rust</h3>
+            <div style="display: flex">
+              <ul class="no-style">
+                <li class="fragment">🥉 Third time participating</li>
+                <li class="fragment">
+                  🐣 Never written a single line of Rust before
+                </li>
+                <li class="fragment">📖 Bought a book</li>
+                <li class="fragment">💁‍♀️ Used a starter</li>
+                <li class="fragment">🤩 36 stars</li>
+              </ul>
+              <img
+                class="fragment"
+                src="img/result-2021.png"
+                alt=""
+                style="width: 30vw"
+              />
+            </div>
+            <p class="fragment">
+              <a
+                href="
+              https://github.com/ElkeCodes/AdventOfCode2021"
+              >
+                https://github.com/ElkeCodes/AdventOfCode2021</a
+              >
+            </p>
+          </section>
+          <section>
+            <h3>Retro on 2021</h3>
+            <ul class="no-style">
+              <li class="fragment">🤯 So much to learn!</li>
+              <li class="fragment">📖 Book was a great help</li>
+              <li class="fragment">🙇‍♀️ Hardest part: how to write it</li>
+              <li class="fragment">🥳 Learned a lot about Rust</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section><h2>How can you start the Advent of Code</h2></section>
+          <section>
+            <h3>Creating an account</h3>
+            <p>Log in with:</p>
+            <ul>
+              <li>Google</li>
+              <li>GitHub</li>
+              <li>Twitter</li>
+              <li>Reddit</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Choosing a technology</h3>
+            <ul>
+              <li class="fragment">What's your goal?</li>
+              <li class="fragment">All technologies are valid!</li>
+              <li class="fragment">Don't limit yourself to 1</li>
+              <li class="fragment">More popular = more resources</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Use a starter template</h3>
+            <p>
+              <a href="https://github.com/Bogdanp/awesome-advent-of-code"
+                >https://github.com/Bogdanp/awesome-advent-of-code</a
+              >
+            </p>
+          </section>
+          <section>
+            <h3>When should you enter?</h3>
+            <ul>
+              <li class="fragment">Whenever you want!</li>
+              <li class="fragment">It's ok to start later</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Getting help</h3>
+            <ul>
+              <li>
+                <a href="https://www.reddit.com/r/AdventOfCode"
+                  >/r/AdventOfCode</a
+                >
+              </li>
+              <li>Twitter</li>
+              <li>The women.code(be) discord!</li>
+            </ul>
+          </section>
+        </section>
         <section>- situation 30/11</section>
         <section>2022 version</section>
         <section>- how I'm participating</section>
