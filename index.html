@@ -23,6 +23,10 @@
       p em {
         text-decoration: underline;
       }
+      ul.no-style {
+        padding-left: 0;
+        margin-left: 0;
+      }
       ul.no-style li {
         list-style: none;
       }
@@ -60,7 +64,7 @@
             <img src="img/elke-heymans.jpg" alt="" width="30%" />
           </section>
           <section>
-            <h3>Who I am</h3>
+            <h3>Who am I?</h3>
             <ul class="no-style">
               <li class="fragment">👩‍💻 Fullstack JS consultant</li>
               <li class="fragment">📸 Photography</li>
@@ -71,6 +75,9 @@
           <section>
             <h3>I like to do weird things...</h3>
             <img src="img/citystrides.png" alt="" class="r-stretch" />
+            <p class="fragment">
+              1st of December 2022: 62.19% of Ghent completed
+            </p>
           </section>
         </section>
         <section>
@@ -81,10 +88,10 @@
             <h3>What is an advent calendar?</h3>
             <ul class="no-style">
               <li class="fragment">⛪️ Christian tradition</li>
-              <li class="fragment">#️⃣ Counting down to Christmas</li>
+              <li class="fragment">#️⃣ Counting down</li>
               <li class="fragment">4️⃣ 4 Sundays before Christmas</li>
-              <li class="fragment">📆 Between 27 November and 3 December</li>
-              <li class="fragment">😎 People turned on easy mode</li>
+              <li class="fragment">📆 November 27th - December 3rd</li>
+              <li class="fragment">😎 Easy mode: December 1st</li>
               <li class="fragment">🤑 Commercialised</li>
             </ul>
           </section>
@@ -101,7 +108,7 @@
             <ul class="no-style">
               <li class="fragment">✍️ Story set in 25 days before Christmas</li>
               <li class="fragment">🧩 25 programming puzzles</li>
-              <li class="fragment">🌅 Every morning</li>
+              <li class="fragment">🌅 Every morning at 6am</li>
               <li class="fragment">⏰ Each day = 2 parts</li>
               <li class="fragment">⭐️ Each part = 1 star</li>
               <li class="fragment">🤩 Goal: 50 stars</li>
@@ -114,7 +121,7 @@
                 <li class="fragment">👨‍💻 Eric Wastl</li>
                 <li class="fragment">🎬 2015</li>
                 <li class="fragment">📅 2015: 15k participants</li>
-                <li class="fragment">☝️ 2021: 200k+</li>
+                <li class="fragment">☝️ 2021: 240k+</li>
               </ul>
               <img src="img/eric-wastl.png" alt="" width="30%" />
             </div>
@@ -124,13 +131,21 @@
             <div class="flex space-between">
               <ul class="no-style">
                 <li class="fragment">🏃 Speed run</li>
-                <li class="fragment">👽 Weird languages</li>
                 <li class="fragment">🧑‍🏫 Education</li>
                 <li class="fragment">🙋 Preparation interviews</li>
                 <li class="fragment">🏋️‍♂️ Company training</li>
               </ul>
-              <img src="img/speed-run.png" alt="" class="r-stretch" width="30%" />
+              <img
+                src="img/speed-run.png"
+                alt=""
+                class="r-stretch"
+                width="30%"
+              />
             </div>
+          </section>
+          <section>
+            <h3>Sometimes, you just have to challenge yourself...</h3>
+            <img src="img/nes.png" alt="" class="r-stretch" />
           </section>
         </section>
         <section>
@@ -321,6 +336,9 @@ function runPartA() {
             <p class="fragment">Puzzle solution = 81 * 1939 = 157059</p>
           </section>
           <section>
+            <img src="img/you-got-a-star.jpg" alt="" class="r-stretch" />
+          </section>
+          <section>
             <h3>Time for part 2!</h3>
             <div class="puzzle-description">
               <p class="fragment">
@@ -414,6 +432,9 @@ function runPartB() {
             <h2>👵<br />My experience with the Advent of Code</h2>
           </section>
           <section>
+            <h3>🥇<br />First time participating:<br />Scheme</h3>
+          </section>
+          <section>
             <h3>Language for 2018: Scheme</h3>
             <pre><code data-trim>
 (define (fib n)
@@ -434,7 +455,6 @@ function runPartB() {
             <h3>2018: Scheme</h3>
             <div class="flex">
               <ul class="no-style">
-                <li class="fragment">🥇 First time participating</li>
                 <li class="fragment">🏋️‍♀️ Exercise my old Scheme knowledge</li>
                 <li class="fragment">📆 Same day solve</li>
                 <li class="fragment">⏳ Performance and time</li>
@@ -469,6 +489,9 @@ function runPartB() {
             <p class="fragment">7/10 would recommend</p>
           </section>
           <section>
+            <h3>🥈<br />Second time participating:<br />TypeScript</h3>
+          </section>
+          <section>
             <h3>Language for 2020: TypeScript</h3>
             <pre><code data-trim class="language-typescript">
 const fib = (n: number): number => {
@@ -489,7 +512,6 @@ const fib = (n: number): number => {
             <h3>2020: TypeScript</h3>
             <div class="flex">
               <ul class="no-style">
-                <li class="fragment">🥈 Second time participating</li>
                 <li class="fragment">🏎 Daily driver</li>
                 <li class="fragment">🧘‍♀️ Less harsh on myself</li>
                 <li class="fragment">🤩 50 stars</li>
@@ -521,6 +543,9 @@ const fib = (n: number): number => {
             <p class="fragment">10/10 would definitely recommend</p>
           </section>
           <section>
+            <h3>🥉<br />Third time participating:<br />Rust</h3>
+          </section>
+          <section>
             <h3>Language for 2021: Rust</h3>
             <pre><code data-trim>
 pub fn fib(n: i32) -> u64 {
@@ -546,7 +571,6 @@ pub fn fib(n: i32) -> u64 {
             <h3>2021: Rust</h3>
             <div class="flex">
               <ul class="no-style">
-                <li class="fragment">🥉 Third time participating</li>
                 <li class="fragment">
                   🐣 Never written a single line of Rust before
                 </li>
@@ -614,6 +638,9 @@ pub fn fib(n: i32) -> u64 {
               <li class="fragment">...</li>
             </ul>
           </section>
+          <section>
+            <img src="img/bruteforce.png" alt="" class="r-stretch" />
+          </section>
         </section>
         <section>
           <section>
@@ -627,7 +654,28 @@ pub fn fib(n: i32) -> u64 {
               <li class="fragment">📚 Book</li>
             </ul>
           </section>
-          <section>- my first day</section>
+          <section>
+            <h3>My first day</h3>
+            <ul class="no-style">
+              <li class="fragment">👷‍♀️ I had work today</li>
+              <li class="fragment">⏰ Woke up at 5am</li>
+              <li class="fragment">🧐 Looked at 6am</li>
+              <li class="fragment">✍️ Wrote at work</li>
+            </ul>
+          </section>
+          <section>
+            <h3>My first day: an evaluation</h3>
+            <ul class="no-style">
+              <li class="fragment">🐣 It's been almost a year</li>
+              <li class="fragment">🤷‍♀️ Rust is confusing</li>
+              <li class="fragment">💪 I can do this</li>
+              <li class="fragment">😎 Rust is awesome</li>
+            </ul>
+            <p class="fragment">➡ It's exciting!</p>
+          </section>
+          <section>
+            <img src="img/2022-day1.png" alt="" class="r-stretch" />
+          </section>
         </section>
         <section>
           <section>
@@ -652,7 +700,48 @@ pub fn fib(n: i32) -> u64 {
               <li class="fragment">🕵️‍♀️ More popular = more resources</li>
             </ul>
           </section>
-          <section><img src="img/nes.png" alt="" class="r-stretch" /></section>
+          <section>
+            <h3>Pick your fighter!</h3>
+            <ul class="no-style" style="columns: 4; font-size: 0.6em">
+              <li>Java</li>
+              <li>C#</li>
+              <li>Scheme</li>
+              <li>JavaScript</li>
+              <li>Fortran</li>
+              <li>F#</li>
+              <li>C++</li>
+              <li>Rust</li>
+              <li>PHP</li>
+              <li>Erlang</li>
+              <li>Python</li>
+              <li>Progress&nbsp;4GL</li>
+              <li>Elixir</li>
+              <li>Kotlin</li>
+              <li>Go</li>
+              <li>Ruby</li>
+              <li>D</li>
+              <li>Haskell</li>
+              <li>Clojure</li>
+              <li>Swift</li>
+              <li>C</li>
+              <li>Scala</li>
+              <li>Assembly</li>
+              <li>R</li>
+              <li>Bash</li>
+              <li>Perl</li>
+              <li>COBOL</li>
+              <li>VBA</li>
+            </ul>
+            <p class="fragment">And so many more options...!</p>
+          </section>
+          <section>
+            <h3>Top 15 languages in 2018</h3>
+            <img src="img/popular-languages.png" alt="" class="r-fill" />
+          </section>
+          <section>
+            <h3>Or just go weird....</h3>
+            <img src="img/ti-84.png" alt="" class="r-stretch" />
+          </section>
           <section>
             <h3>Use a starter template</h3>
             <p>
@@ -661,6 +750,10 @@ pub fn fib(n: i32) -> u64 {
               >
             </p>
             <img src="img/templates.png" alt="" class="r-stretch" />
+          </section>
+          <section>
+            <img src="img/starter-template-setup.png" alt="" class="r-fill" />
+            <p class="fragment">Add dayXX.rs and start coding!</p>
           </section>
           <section>
             <h3>When should you enter?</h3>
@@ -673,6 +766,7 @@ pub fn fib(n: i32) -> u64 {
           <section>
             <h3>Getting help</h3>
             <ul class="no-style">
+              <li>💻 Wikipedia</li>
               <li>
                 🌍
                 <a href="https://www.reddit.com/r/AdventOfCode"
@@ -700,6 +794,7 @@ pub fn fib(n: i32) -> u64 {
             <li class="fragment">🙋 Ask for help</li>
             <li class="fragment">🔨 Break it into smaller problems</li>
             <li class="fragment">✍️ Make notes and diagrams</li>
+            <li class="fragment">📚 Use libraries</li>
           </ul>
           <p class="fragment">🧠 You'll learn a lot!</p>
         </section>
